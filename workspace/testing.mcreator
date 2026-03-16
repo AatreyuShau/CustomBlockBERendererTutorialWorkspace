@@ -1,0 +1,123 @@
+{
+  "mod_elements": [
+    {
+      "name": "Example",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "example",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testing/block/ExampleBlock.java",
+          "src/main/java/net/mcreator/testing/block/entity/ExampleBlockEntity.java",
+          "src/main/resources/assets/testing/blockstates/example.json",
+          "src/main/resources/data/testing/loot_table/blocks/example.json",
+          "src/main/resources/assets/testing/models/block/example.json",
+          "src/main/resources/assets/testing/models/item/example.json",
+          "src/main/resources/assets/testing/items/example.json"
+        ]
+      }
+    },
+    {
+      "name": "ExampleBlockGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "example_block_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testing/client/gui/ExampleBlockGUIScreen.java",
+          "src/main/java/net/mcreator/testing/world/inventory/ExampleBlockGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "ExampleBlockRenderer",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "example_block_renderer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testing/ExampleBlockRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "ExampleOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "example_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testing/procedures/ExampleOnBlockRightclickedProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.testing.example": "Example"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/testing/init/TestingModMenus.java",
+      "src/main/java/net/mcreator/testing/init/TestingModScreens.java",
+      "src/main/java/net/mcreator/testing/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/testing/init/TestingModBlocks.java",
+      "src/main/java/net/mcreator/testing/init/TestingModBlockEntities.java",
+      "src/main/java/net/mcreator/testing/init/TestingModItems.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/testing/TestingMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "testing",
+    "modName": "testing",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.testing"
+  },
+  "mcreatorVersion": 202600110319
+}

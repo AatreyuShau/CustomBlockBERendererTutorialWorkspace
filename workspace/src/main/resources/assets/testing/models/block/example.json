@@ -1,0 +1,8 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "testing:block/display_side",
+    "particle": "testing:block/display_side"
+  },
+  "render_type": "cutout_mipped"
+}
